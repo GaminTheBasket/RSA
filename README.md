@@ -103,5 +103,5 @@ http://localhost:5000
 
 Nếu bạn gặp vấn đề hoặc có thắc mắc, vui lòng:
 - Tạo issue trong repository
-- Liên hệ với chúng tôi qua email
+- Liên hệ với tôi qua email
 - Kiểm tra tài liệu hướng dẫn
