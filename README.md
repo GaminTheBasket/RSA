@@ -62,9 +62,11 @@
     **a. Dành cho Người gửi:**
     *   Truy cập trang gửi: `http://<Địa_chỉ_IP_máy_chủ>:5000/sender`
     *   **Bước 1: Tạo Cặp Khóa:**
+    *   ![image](https://github.com/user-attachments/assets/cd6815bf-7b65-498d-8264-1e4cbb6be36f)
         *   Nhập một **Tên người dùng (Username)** của bạn (ví dụ: `nguoigui_alice`). Đây sẽ là định danh của bạn khi trao đổi file.
         *   Nhấn nút **"Tạo Cặp Khóa"**. Hệ thống sẽ tạo cặp khóa RSA và lưu chúng trên máy chủ trung tâm (`nguoigui_alice_private_key.pem`, `nguoigui_alice_public_key.pem`).
     *   **Bước 2: Ký Số File:**
+    *   ![image](https://github.com/user-attachments/assets/6dba48a6-67b8-425b-95dc-dbcee13c5e82)
         *   Chọn file cần ký số từ máy tính của bạn.
         *   Nhấn nút **"Ký Số & Tải Xuống"**. File gốc và chữ ký số (`.sig`) sẽ được lưu trữ trên máy chủ trung tâm.
         *   Sau khi ký thành công, giao diện sẽ hiển thị thông tin cần thiết: **Tên file gốc**, **Tên file chữ ký**, và **Tên người dùng (username)** của bạn. **Người gửi cần cung cấp BA thông tin này cho người nhận thông qua một kênh liên lạc riêng (ví dụ: email, tin nhắn, gọi điện).**
@@ -72,11 +74,13 @@
     **b. Dành cho Người nhận:**
     *   Truy cập trang nhận: `http://<Địa_chỉ_IP_máy_chủ>:5000/receiver`
     *   **Bước 1: Nhập Thông Tin File:**
+    *   ![image](https://github.com/user-attachments/assets/c335b272-8efc-4810-adfb-62386321bd51)
         *   Nhập **Tên file cần xác thực** (là tên file gốc mà người gửi đã cung cấp, ví dụ: `document.docx`).
         *   Nhập **Tên file chữ ký số** (là tên file chữ ký mà người gửi đã cung cấp, ví dụ: `document.docx.sig`).
         *   Nhập **Tên người dùng của người gửi** (là username mà người gửi đã cung cấp, ví dụ: `nguoigui_alice`).
         *   Nhấn nút **"Kiểm tra thông tin"** để chuyển sang bước xác thực.
     *   **Bước 2: Xác Thực:**
+    *   ![image](https://github.com/user-attachments/assets/dfb59a77-1f66-41fe-b887-8dd304438818)
         *   Nhấn nút **"Xác Thực"**. Máy chủ trung tâm sẽ tự động tìm các file trên (`document.docx`, `document.docx.sig`, `nguoigui_alice_public_key.pem`) và tiến hành xác thực.
         *   Kết quả xác thực (Hợp lệ / Không hợp lệ) sẽ được hiển thị trên giao diện.
 
